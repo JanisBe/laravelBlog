@@ -40,7 +40,7 @@
             <div class="content">
                 <div>
                     @foreach($tasks as $task)
-                           {{$task->body}}<br>
+                           <a href='tasks/{{$task->id}}'>{{$task->body}}</a><br>
                     @endforeach
                 </div>
             </div>
